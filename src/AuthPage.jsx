@@ -5,7 +5,7 @@ const AuthPage = (props) => {
         e.preventDefault();
         const { value } = e.target[0];
         axios.post(
-            'http://localhost:3001/authenticate',
+            'https://b175-197-184-176-114.ngrok-free.app/authenticate',
             { username: value }
         )
         props.onAuth({ username: value, secret: value })
